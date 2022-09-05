@@ -1,0 +1,9 @@
+<div class="slider-wrapper clearfix">
+	<ul class="slider-list">
+		<% for (var i = 0; i < sliderData.length; i ++) { 
+       var item = sliderData[i];
+		%>
+      <%- include('item.ejs', { i, item, IMG_BASE_URL }) %>
+		<% } %>
+	</ul>
+</div>

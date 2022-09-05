@@ -1,0 +1,63 @@
+<%- include('layout/head.ejs', { PAGE_CONF }) %>
+
+<div class="container">
+	<%- include('templates/common/header/index.ejs', {
+		navData
+	}) %>
+
+	<%- include('templates/index/carousel/index.ejs', {
+		sliderData,
+		IMG_BASE_URL
+	}) %>
+
+	<%- include('templates/common/mainTitle/index.ejs', {
+		title: '官方推荐课程',
+		path: '/list',
+		linkName: '更多课程'
+	}) %>
+
+	<%- include('templates/index/recomCourse/index.ejs', {
+		recomCourseData,
+		IMG_BASE_URL
+	}) %>
+
+	<%- include('templates/common/mainTitle/index.ejs', {
+		title: '精品课程集合',
+		path: '/list',
+		linkName: '更多课程'
+	}) %>
+
+	<%- include('templates/index/collection/index.ejs', {
+		collectionData,
+		IMG_BASE_URL
+	}) %>
+
+	<%- include('templates/common/mainTitle/index.ejs', {
+		title: '全网优秀讲师',
+		path: 'http://msiwei.ke.qq.com/?tuin=304a784b#category=-1&tab=2',
+		linkName: '更多课程'
+	}) %>
+
+	<%- include('templates/index/teacher/index.ejs', {
+		starTeacherData,
+		IMG_BASE_URL
+	}) %>
+
+	<%- include('templates/common/mainTitle/index.ejs', {
+		title: 'JS++优秀学生',
+		path: 'http://msiwei.ke.qq.com',
+		linkName: '更多信息'
+	}) %>
+
+	<%- include('templates/index/student/index.ejs', {
+		goodStudentData,
+		IMG_BASE_URL
+	}) %>
+
+	<%- include('templates/common/footer/index.ejs', {
+		linkData,
+		manualData
+	}) %>
+</div>
+
+<%- include('layout/foot.ejs', { PAGE_CONF }) %>

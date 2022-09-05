@@ -1,0 +1,16 @@
+<%- include('layout/head.ejs', { PAGE_CONF }) %>
+
+<div class="container">
+	<%- include('templates/common/header/index.ejs', {
+		navData
+	}) %>
+
+  <%- include('templates/error/index.ejs') %>
+
+	<%- include('templates/common/footer/index.ejs', {
+		linkData,
+		manualData
+	}) %>
+</div>
+
+<%- include('layout/foot.ejs', { PAGE_CONF }) %>

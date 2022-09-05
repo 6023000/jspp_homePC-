@@ -1,0 +1,32 @@
+<div class="course-item course-card">
+	<div class="course-cover">
+		<a 
+		  href="<%= item.href %>"
+      target="_blank"
+		>
+			<img 
+			  src="<%= IMG_BASE_URL + item.posterKey %>"
+			  class="course-img" 
+			  alt="<%= item.courseName %>"
+		  />
+		</a>
+	</div>
+	<h1 class="course-tt">
+		<a 
+		  href="<%= item.href %>"
+      target="_blank"
+		>
+			<%= item.courseName %>
+		</a>
+	</h1>
+	<div class="course-info">
+		<span
+      class="<%= item.price === '0' ? 'left free' : 'left price' %>"
+		>
+			<%= item.price === '0' ? '免费' : `￥${item.price}` %>
+		</span>
+		<span class="right">
+			<%= item.studentCount %>人正在学习
+		</span>
+	</div>
+</div>

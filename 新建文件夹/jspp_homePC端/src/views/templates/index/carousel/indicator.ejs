@@ -1,0 +1,10 @@
+<div 
+  class="indicator clearfix"
+  style="
+    width: <%= 50 * len + 20 %>px;
+    margin-left: <%= - (50* len + 20) / 2 %>px;
+  ">
+  <% for (var i = 0; i < len; i ++) { %>
+    <i class="<%= !i ? 'indicator-item current' : 'indicator-item' %>"></i>
+  <% } %>
+</div>

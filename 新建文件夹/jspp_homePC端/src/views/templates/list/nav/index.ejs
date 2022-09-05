@@ -1,0 +1,22 @@
+<div class="nav-board">
+	<div class="nav-inner">
+		<ul class="nav-list J_navList clearfix">
+			<%- include('item.ejs', {
+				item: {
+					title: '全部课程',
+					id: 0
+				}, 
+				i: 0
+			}) %>
+
+			<% for (var i = 0; i < courseTabData.length; i ++) { 
+         var item = courseTabData[i];
+			%>
+        <%- include('item.ejs', {
+        	item, 
+        	i: i + 1
+        }) %>
+			<% } %>
+		</ul>
+	</div>
+</div>

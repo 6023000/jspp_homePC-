@@ -1,0 +1,34 @@
+<div class="footer-info clearfix">
+	<div class="info-item">
+		<h1 class="info-tt">官方手册集合</h1>
+		<ul class="manual-list clearfix">
+			<% for (var i = 0; i < manualData.length; i ++) { 
+         var item = manualData[i];
+			%>
+        <%- include('manualItem.ejs', {
+					item
+				}) %>
+			<% } %>
+		</ul>
+	</div>
+	<div class="info-item">
+		<h1 class="info-tt">合作平台链接</h1>
+		<ul class="link-list clearfix">
+			<% for (var i = 0; i < linkData.length; i ++) { 
+         var item = linkData[i];
+			%>
+        <%- include('linkItem.ejs', {
+        	item
+        }) %>
+			<% } %>
+		</ul>
+	</div>
+	<div class="info-item">
+		<h1 class="info-tt">课程微信咨询与问题答疑</h1>
+		<img 
+		  src="<%= qrInfomation %>" 
+		  alt="课程微信咨询与问题答疑"
+		  class="qr-img"
+		>
+	</div>
+</div>

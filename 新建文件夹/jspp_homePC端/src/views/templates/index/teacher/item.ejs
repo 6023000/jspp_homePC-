@@ -1,0 +1,40 @@
+<div class="teacher-item">
+	<div 
+	  class="<%= (i + 1) % 2 === 0 ? 'img-wrap last' : 'img-wrap' %>"
+	>
+	  <a 
+	    href="<%= item.href %>"
+	    target="_blank"
+	  >
+	  	<img 
+	  	  src="<%= IMG_BASE_URL + item.teacherImgKey %>" 
+	  	  alt="<%= item.teacherName %>"
+	  	  class="teacher-img"
+	  	/>
+	  </a>
+	  <i class="triangle-right"></i>
+	</div>
+	<div class="teacher-info">
+		<div class="teacher-header">
+			<h1 class="teacher-name">
+				<a 
+				  href="<%= item.href %>"
+				  targetr="_blank"
+				>
+					<%= item.teacherName %>
+				</a>
+			</h1>
+		</div>
+		<p class="count">
+			<span>课程数：<%= item.courseCount %>门</span>
+			<i></i>
+			<span>学生数：<%= item.studentCount %>人</span>
+		</p>
+		<p class="intro"><%= item.intro %></p>
+	</div>
+</div>
+
+
+
+
+

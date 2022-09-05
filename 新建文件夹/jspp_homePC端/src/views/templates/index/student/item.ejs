@@ -1,0 +1,30 @@
+<div class="teacher-item">
+	<div 
+	  class="<%= (i + 1) % 2 === 0 ? 'img-wrap last' : 'img-wrap' %> student"
+	>
+  	<img 
+  	  src="<%= IMG_BASE_URL + item.studentImgKey %>" 
+  	  alt="<%= item.studentName %>"
+  	  class="teacher-img"
+  	/>
+	  <i class="triangle-right"></i>
+	</div>
+	<div class="teacher-info student">
+		<div class="teacher-header">
+			<h1 class="teacher-name">
+				<%= item.studentName %>
+			</h1>
+		</div>
+		<p class="count">
+			<span>正在学习：
+        <a 
+          href="<%= item.courseLink %>"
+          target="_blank"
+        >
+        	<%= item.courseName %>
+        </a>
+			</span>
+		</p>
+		<p class="intro"><%= item.intro %></p>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<% 
+    var HEAD = PAGE_CONF.HEAD,
+        STYLES = PAGE_CONF.STYLESHEETS;
+	%>
+	<meta charset="UTF-8">
+	<meta name="keyword" content="<%= HEAD.KEYWORD %>" />
+	<meta name="description" content="<%= HEAD.DESCRIPTION %>" />
+	<meta rel="shortcut icon" href="<%= HEAD.FAVICON %>" type="image/x-icon" />
+	<title><%= HEAD.TITLE %></title>
+	<% for (var i = 0; i < STYLES.length; i ++) { %>
+    <link rel="stylesheet" href="<%= STYLES[i] %>" />
+	<% } %>
+</head>
+<body>

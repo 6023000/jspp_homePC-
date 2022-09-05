@@ -1,0 +1,16 @@
+.main-title {
+	width: 1200px;
+	height: 80px;
+	line-height: 80px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+
+	.main-tt {
+		display: inline-block;
+	}
+
+	.main-tt-lk {
+		float: right;
+		color: #999;
+	}
+}

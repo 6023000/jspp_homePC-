@@ -1,0 +1,60 @@
+<div class="recom-course-item">
+	<div class="course-cover">
+		<a 
+		  href="<%= item.href %>"
+      class="course-lk"
+      target="_blank"
+		>
+			<img 
+			  src="<%= IMG_BASE_URL + item.posterKey %>" 
+			  alt="<%= item.title %>"
+			  class="course-img"
+			/>
+		</a>
+	</div>
+	<div class="course-info">
+		<h1 class="course-tt">
+			<a 
+			  href="<%= item.href %>"
+			  class="course-lk"
+			  target="_blank"
+			>
+			  <%= item.title %>
+			</a>
+		</h1>
+		<p class="course-desc"><%= item.description %></p>
+		<div class="spread-info">
+			<img 
+			  src="<%= IMG_BASE_URL + item.teacherImgKey %>" 
+			  alt="<%= item.teacherName %>"
+			  class="teacher-img"
+			/>
+			<span class="teacher-name"><%= item.teacherName %></span>
+			<i></i>
+			<span class="count"><%= item.studentCount %>人正在学习</span>
+		</div>
+		<div class="price">￥<%= item.price %>.00</div>
+		<div class="btn-wrap">
+			<a 
+			  href="<%= item.href %>"
+			  class="btn btn-success"
+			  target="_blank"
+			>
+				立即报名
+			</a>
+			<a 
+			  href="http://wpa.qq.com/msgrd?v=3&uin=2697726307&site=qq&menu=yes"
+			  class="btn btn-search"
+			  target="_blank"
+			>
+				课程咨询
+			</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
